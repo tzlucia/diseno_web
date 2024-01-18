@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Covered+By+Your+Grace&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Cinzel:wght@500&family=Instrument+Serif:ital@0;1&family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --background: rgb(65, 82, 74);
+  --secondary: rgb(0, 0, 0);
+  --tex: rgb(255, 255, 255);
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-left ul,
+.nav-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-left li,
+.nav-right li {
+  margin-right: 15px;
+}
+
+.nav-center h1 {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 60px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-right a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 25px;
+}
+.hero-header {
+  position: relative;
+  text-align: center;
+}
+
+.hero-header img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: var(--background);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #fff;
+}
