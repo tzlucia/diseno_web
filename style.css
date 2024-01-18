@@ -14,6 +14,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 16px; /* Ajusta según sea necesario */
 }
 
 nav {
@@ -28,6 +29,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
+  width: 100%; /* Ancho completo en pantallas pequeñas */
 }
 
 .nav-left ul,
