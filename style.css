@@ -6,84 +6,73 @@
   --background: rgb(65, 82, 74);
   --secondary: rgb(0, 0, 0);
   --tex: rgb(255, 255, 255);
+  font-family: "Alegreya Sans SC", sans-serif;
 }
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Alegreya Sans SC", sans-serif;
-  font-size: 16px; /* Ajusta según sea necesario */
 }
 
-nav {
+.navbar {
+  height: 80px;
+  background-color: rgb(65, 82, 74);
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%; /* Ancho completo en pantallas pequeñas */
 }
 
-.nav-left ul,
-.nav-right ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.nav-izq ul,
+.nav-derecho ul,
+.nav-central ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
-.nav-left li,
-.nav-right li {
-  margin-right: 15px;
+.nav-izq li,
+.nav-derecho li,
+.nav-central li {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-izq ul li:hover {
+  border-bottom: 1px solid white;
 }
 
-.nav-center h1 {
-  margin: 0;
+.nav-central {
   font-family: "Amatic SC", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
   margin-right: 60px;
+  font-weight: bold; /* Hace las letras más gruesas */
+  font-size: 25px; /* Tamaño de letra más grande */
 }
 
-.nav-left a {
+.nav-izq a,
+.nav-derecho a {
+  color: white; /* Color blanco para las letras */
+  font-size: 16px; /* Tamaño de letra más grande */
   text-decoration: none;
-  color: #fff;
-}
-.nav-right a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  margin-right: 25px;
-}
-.hero-header {
-  position: relative;
-  text-align: center;
 }
 
-.hero-header img {
-  width: 100%;
-  height: auto;
+.nav-central a {
+  font-weight: bold; /* Hace las letras más gruesas */
+  font-size: 18px; /* Tamaño de letra más grande */
 }
-
-footer {
-  background-color: var(--background);
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.social-icon {
-  text-decoration: none;
-  color: #fff;
+.hero-section {
+  height: 100vh;
+  background-color: black;
+  background-image: url(recursos/imagen.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
