@@ -40,9 +40,78 @@
     <section class="hero-section">
       <div class="img-presentacion"></div>
     </section>
+    <!-- Después de la sección de Hero y antes de la sección de Footer -->
+
+    <section class="about-section">
+      <div class="container">
+        <h2>Quiénes somos</h2>
+        <p>
+          Somos Rincones Gastronómicos, un lugar donde la pasión por la comida
+          se fusiona con la creatividad culinaria. Nuestra historia comienza en
+          un pequeño rincón, donde cada plato es una obra maestra y cada sabor
+          cuenta una historia única.
+        </p>
+      </div>
+    </section>
+    <section class="cards-section">
+      <div class="container">
+        <h2>NUESTRO MENÚ DESTACADO</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="recursos/entrada.png" alt="ENTRADA" />
+            <h3>Salmón Ahumado</h3>
+            <p>
+              Elegante ensalada real con suaves hojas verdes, salmón ahumado,
+              nueces y aderezo de eneldo exclusivo.
+            </p>
+          </div>
+          <div class="card">
+            <img src="recursos/principal.png" alt="PLATO PRINCIPAL" />
+            <h3>Tagliatelle de la Casa con Medallones de Filete Imperial</h3>
+            <p>
+              Tagliatelle de fabricación propia con medallones de filete de res,
+              en salsa cremosa de hongos silvestres y trufas negras.
+            </p>
+          </div>
+          <div class="card">
+            <img src="recursos/postre1.png" alt="POSTRE" />
+            <h3>Soufflé de Panqueques con Coulis de Frutos Boscosos</h3>
+            <p>
+              Suave soufflé de panqueques con vainilla, acompañado de coulis de
+              frutos boscosos y ralladura de cítricos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="info-contacto">
+          <p>Dirección: Calle Principal, Ciudad</p>
+          <p>Teléfono: (123) 456-7890</p>
+          <p>Email: info@turestaurante.com</p>
+        </div>
+
+        <form action="#" method="post" id="formulario-contacto">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
 
     <footer>
-      <p>&copy; 2024 Rincones Gastronómicos. Todos los derechos reservados.</p>
+      <div class="container">
+        <p>&copy; 2024 Tu Restaurante. Todos los derechos reservados.</p>
+      </div>
     </footer>
   </body>
 </html>

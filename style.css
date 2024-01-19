@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Covered+By+Your+Grace&family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Cinzel:wght@500&family=Instrument+Serif:ital@0;1&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Amatic+SC:wght@400;700&family=Cinzel:wght@500&family=Instrument+Serif:ital@0;1&family=Quicksand:wght@300..700&family=Satisfy&display=swap");
 
 :root {
   --background: rgb(65, 82, 74);
@@ -75,4 +75,132 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* Estilos para la sección "Quiénes Somos" */
+.about-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: var(--background);
+  font-family: "Amatic SC", sans-serif;
+}
+
+.about-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Estilos para la sección "Nuestro Menú Destacado" */
+.cards-section {
+  padding: 50px 0;
+}
+
+.cards-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(218, 40, 40, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card h3,
+.card p {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.card {
+  background-color: var(--background);
+}
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.info-contacto p {
+  font-size: 18px;
+  color: #555;
+}
+
+form {
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #555;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }
