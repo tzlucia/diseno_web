@@ -210,22 +210,22 @@ textarea {
   padding: 10px;
 }
 .info-contacto {
-  margin-bottom: 20px; /* Ajusta según sea necesario para dar espacio entre el texto y los iconos */
+  margin-bottom: 20px;
 }
 
 .redes-sociales {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Espacio entre los iconos */
+  gap: 10px;
 }
 
 .redes-sociales a {
   text-decoration: none;
-  color: #333; /* Ajusta el color del ícono según tu diseño */
+  color: #333;
 }
 
 .redes-sociales i {
-  font-size: 24px; /* Ajusta el tamaño del ícono según tu diseño */
+  font-size: 24px;
 }
 
 button {
@@ -238,7 +238,6 @@ button {
   margin: 10px;
   transition: background-color 0.3s ease;
   font-family: "Alegreya Sans SC", sans-serif;
-  transition: background-color 0.3s ease;
 }
 
 footer {
@@ -254,7 +253,7 @@ footer {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
