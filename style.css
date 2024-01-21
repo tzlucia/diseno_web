@@ -8,6 +8,7 @@
   --tex: rgb(255, 255, 255);
   font-family: "Alegreya Sans SC", sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,33 +17,16 @@
 
 .navbar {
   height: 80px;
-  background-color: rgb(65, 82, 74);
+  background: linear-gradient(
+    to right,
+    rgb(82, 92, 81),
+    rgb(26, 36, 27),
+    rgb(1, 10, 7)
+  );
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.nav-izq ul,
-.nav-derecho ul,
-.nav-central ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-}
-
-.nav-izq li,
-.nav-derecho li,
-.nav-central li {
-  margin: 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-izq ul li:hover {
-  border-bottom: 1px solid white;
 }
 
 .nav-central {
@@ -50,93 +34,144 @@
   font-weight: 900;
   font-style: normal;
   margin-right: 60px;
-  font-weight: bold; /* Hace las letras más gruesas */
-  font-size: 25px; /* Tamaño de letra más grande */
-}
-
-.nav-izq a,
-.nav-derecho a {
-  color: white; /* Color blanco para las letras */
-  font-size: 16px; /* Tamaño de letra más grande */
-  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
 }
 
 .nav-central a {
-  font-weight: bold; /* Hace las letras más gruesas */
-  font-size: 18px; /* Tamaño de letra más grande */
+  font-weight: bold;
+  font-size: 18px;
 }
+
+.nav-izq ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-izq li {
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-izq ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-izq a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 .hero-section {
-  height: 100vh;
+  height: 90vh;
   background-color: black;
-  background-image: url(recursos/imagen.png);
+  background-image: url(recursos/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-/* Estilos para la sección "Quiénes Somos" */
+
+.btn-carta,
+.btn-reserva {
+  background-color: var(--background);
+  color: var(--secondary);
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  font-family: "Alegreya Sans SC", sans-serif;
+  width: 150px;
+  height: 50px;
+}
+
+.img-presentacion .btn-carta:hover,
+.img-presentacion .btn-reserva:hover {
+  background-color: rgb(158, 175, 156);
+}
+
 .about-section {
   background-color: #f9f9f9;
-  padding: 50px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
 .about-section h2 {
   font-size: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--background);
   font-family: "Amatic SC", sans-serif;
 }
 
 .about-section p {
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
 }
 
-/* Estilos para la sección "Nuestro Menú Destacado" */
 .cards-section {
-  padding: 50px 0;
+  padding: 40px 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .cards-section h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 40px;
   color: #333;
   text-align: center;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
-  width: 30%;
+  width: 49%;
   margin-bottom: 20px;
+  text-align: center;
   border: 1px solid #ddd;
-  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(218, 40, 40, 0.1);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+  background-color: var(--background);
+  background: linear-gradient(to right, rgb(82, 92, 81), rgb(110, 122, 109));
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #ffffff;
 }
 
 .card h3,
 .card p {
-  padding: 15px;
+  padding: 5px;
   margin: 0;
   text-align: center;
+  font-size: 35px;
 }
 
-.card {
-  background-color: var(--background);
+.card h3 {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 50px;
+}
+
+.card p {
+  padding: 15px;
+  font-size: 20px;
 }
 
 .contact-section {
@@ -173,34 +208,57 @@ input,
 textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s ease-in-out;
+}
+.info-contacto {
+  margin-bottom: 20px; /* Ajusta según sea necesario para dar espacio entre el texto y los iconos */
 }
 
-input:focus,
-textarea:focus {
-  border-color: #555;
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los iconos */
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  color: #333; /* Ajusta el color del ícono según tu diseño */
+}
+
+.redes-sociales i {
+  font-size: 24px; /* Ajusta el tamaño del ícono según tu diseño */
 }
 
 button {
-  background-color: #333;
-  color: #fff;
-  padding: 12px 18px;
+  background-color: var(--background);
+  color: var(--secondary);
+  padding: 10px 30px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  font-size: 20px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  font-family: "Alegreya Sans SC", sans-serif;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #555;
-}
-
-.footer {
-  background-color: #333;
-  color: #fff;
+footer {
+  background: linear-gradient(
+    to right,
+    rgb(82, 92, 81),
+    rgb(26, 36, 27),
+    rgb(1, 10, 7)
+  );
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 10px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.8;
 }
